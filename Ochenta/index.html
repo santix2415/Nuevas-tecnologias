@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín Infantil El Paraíso de los Genios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #fef9f3;
+            color: #5a5a5a;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .module {
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 300px;
+            margin: 30px auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: white;
+            border: 3px solid #e0e0e0; /* Borde claro */
+        }
+
+        /* Botones de colores pastel claros */
+        .admin {
+            background-color: #f8bbd0; /* Rosa claro */
+        }
+
+        .teacher {
+            background-color: #b3e5fc; /* Azul claro */
+        }
+
+        .coordination {
+            background-color: #dcedc8; /* Verde claro */
+        }
+
+        .student {
+            background-color: #ffe0b2; /* Naranja claro */
+        }
+
+        .module:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra oscura */
+        }
+
+        .module a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .module img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .module h2 {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: #ffccbc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+        }
+
+        footer {
+            background-color: #ffccbc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .module {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="img/Logo.png" alt="Logo" style="margin-right: 15px;">
+            <h1>Jardín Infantil El Paraíso de los Genios</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="module admin">
+                    <a href="jstl/administrador/login_admin.jsp">
+                        <img src="img/Admin icon.png" alt="Administrador">
+                        <h2>Administrador</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="module teacher">
+                    <a href="jstl/docente/login_doc.jsp">
+                        <img src="img/Maestro icon.png" alt="Docente">
+                        <h2>Docente</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="module coordination">
+                    <a href="jstl/coordinacion/login_coor.jsp">
+                        <img src="img/cordinacionS.png" alt="Coordinación">
+                        <h2>Tareas</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="module student">
+                    <a href="jstl/estudiante/login_est.jsp">
+                        <img src="img/Padre icon.png" alt="Estudiantes">
+                        <h2>Padres</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Jardín Infantil El Paraíso de los Genios. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

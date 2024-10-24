@@ -1,0 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%-- any content can be specified here e.g.: --%>
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+<sql:setDataSource var="parcialjstl"
+   driver="com.mysql.jdbc.Driver"
+    url = "jdbc:mysql://localhost:3306/parcialjstl"
+   user="root"
+   password=""  />
